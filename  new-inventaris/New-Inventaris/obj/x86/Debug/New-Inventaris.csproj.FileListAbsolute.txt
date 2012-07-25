@@ -1,0 +1,9 @@
+D:\ new-inventaris\New-Inventaris\New-Inventaris\bin\Debug\New-Inventaris.exe
+D:\ new-inventaris\New-Inventaris\New-Inventaris\bin\Debug\New-Inventaris.pdb
+D:\ new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\ new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\New_Inventaris.FrmSever.resources
+D:\ new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\New_Inventaris.Properties.Resources.resources
+D:\ new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\ new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\ new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\New-Inventaris.exe
+D:\ new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\New-Inventaris.pdb
