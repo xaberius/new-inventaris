@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Runtime.InteropServices;
 
-namespace VehiLocGUI
+namespace New_Inventaris
 {
     class INIFile
     {
@@ -52,7 +52,6 @@ namespace VehiLocGUI
             StringBuilder temp = new StringBuilder(255);
 			int i = GetPrivateProfileString(Section,Key,"",temp,255,this.path);
 			return temp.ToString();
-
         }
     }
 }
