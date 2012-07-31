@@ -9,7 +9,7 @@ using System.Management;
 
 namespace New_Inventaris
 {
-    class CoreEngine
+    public class CoreEngine
     {
         INIFile ini = new INIFile(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\new-inventaris.ini");
         private Connect con = new Connect();
@@ -41,7 +41,6 @@ namespace New_Inventaris
             ini.IniWriteValue("Setting", "Server", Convert.ToBase64String(Encoding.Unicode.GetBytes(Server)).ToString());
             ini.IniWriteValue("Setting", "UserName", Convert.ToBase64String(Encoding.Unicode.GetBytes(UserName)));
             ini.IniWriteValue("Setting", "Password", Convert.ToBase64String(Encoding.Unicode.GetBytes(password)));
-            Console.WriteLine("lala lila ; "+ Convert.ToBase64String(Encoding.Unicode.GetBytes(Server)));
         }
 
         public string konek(string text)
@@ -59,7 +58,45 @@ namespace New_Inventaris
             }
         }
 
-        public void coba()
+        public bool readSerialHardware()
+        {
+            bool SNBoard = false;
+            bool ProcessorId = false;
+            ManagementObjectSearcher searcher = new ManagementObjectSearcher("SELECT SerialNumber FROM Win32_BaseBoard");
+            ManagementObjectSearcher searcher2 = new ManagementObjectSearcher("SELECT ProcessorId FROM Win32_Processor");
+
+            ManagementObjectCollection information = searcher.Get();
+            foreach (ManagementObject obj in information)
+            {
+                foreach (PropertyData data in obj.Properties)
+                {
+                    if (Convert.ToBase64String(Encoding.Unicode.GetBytes(data.Value.ToString())) == ini.IniReadValue("Genuine", "SNBoard"))
+                    {
+                        SNBoard = true;
+                    }
+                }
+            }
+
+            ManagementObjectCollection information2 = searcher2.Get();
+            foreach (ManagementObject obj in information2)
+            {
+                foreach (PropertyData data in obj.Properties)
+                {
+                    if (Convert.ToBase64String(Encoding.Unicode.GetBytes(data.Value.ToString())) == ini.IniReadValue("Genuine", "ProcessorId"))
+                    {
+                        ProcessorId = true;
+                    }
+                }
+            }
+            searcher.Dispose();
+
+            if (SNBoard && ProcessorId)
+                return true;
+            else
+                return false;
+        }
+
+        public void writeSerialHardware()
         {
             // First we create the ManagementObjectSearcher that
             // will hold the query used.
@@ -69,7 +106,8 @@ namespace New_Inventaris
             // Product and SerialNumber.
             // You can replace these properties by
             // an asterisk (*) to get all properties (columns).
-            ManagementObjectSearcher searcher = new ManagementObjectSearcher("SELECT Product, SerialNumber FROM Win32_BaseBoard");
+            ManagementObjectSearcher searcher = new ManagementObjectSearcher("SELECT SerialNumber FROM Win32_BaseBoard");
+            ManagementObjectSearcher searcher2 = new ManagementObjectSearcher("SELECT ProcessorId FROM Win32_Processor");
 
             // Executing the query...
             // Because the machine has a single Motherborad,
@@ -80,8 +118,21 @@ namespace New_Inventaris
                 // Retrieving the properties (columns)
                 // Writing column name then its value
                 foreach (PropertyData data in obj.Properties)
-                    Console.WriteLine("{0} = {1}", data.Name, data.Value);
-                Console.WriteLine();
+                {
+                    //Console.WriteLine("{0} = {1}", data.Name, data.Value);
+                    ini.IniWriteValue("Genuine", "SNBoard", Convert.ToBase64String(Encoding.Unicode.GetBytes(data.Value.ToString())));
+                }
+            }
+
+            ManagementObjectCollection information2 = searcher2.Get();
+            foreach (ManagementObject obj in information2)
+            {
+                // Retrieving the properties (columns)
+                // Writing column name then its value
+                foreach (PropertyData data in obj.Properties)
+                {
+                    ini.IniWriteValue("Genuine", "ProcessorId", Convert.ToBase64String(Encoding.Unicode.GetBytes(data.Value.ToString())));
+                }
             }
 
             // For typical use of disposable objects
