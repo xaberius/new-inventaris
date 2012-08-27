@@ -1,0 +1,10 @@
+D:\ new-inventaris\Core-Inventaris\Core-Inventaris\bin\Debug\Core-Inventaris.exe
+D:\ new-inventaris\Core-Inventaris\Core-Inventaris\bin\Debug\Core-Inventaris.pdb
+D:\ new-inventaris\Core-Inventaris\Core-Inventaris\bin\Debug\MySql.Data.dll
+D:\ new-inventaris\Core-Inventaris\Core-Inventaris\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\ new-inventaris\Core-Inventaris\Core-Inventaris\obj\x86\Debug\Core_Inventaris.Properties.Resources.resources
+D:\ new-inventaris\Core-Inventaris\Core-Inventaris\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\ new-inventaris\Core-Inventaris\Core-Inventaris\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\ new-inventaris\Core-Inventaris\Core-Inventaris\obj\x86\Debug\Core-Inventaris.exe
+D:\ new-inventaris\Core-Inventaris\Core-Inventaris\obj\x86\Debug\Core-Inventaris.pdb
+D:\ new-inventaris\Core-Inventaris\Core-Inventaris\obj\x86\Debug\Core_Inventaris.FrmLogin.resources
