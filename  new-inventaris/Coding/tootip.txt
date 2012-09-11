@@ -1,0 +1,8 @@
+tool.UseFading = true;
+            tool.UseAnimation = true;
+
+            tool.ShowAlways = true;
+            tool.AutoPopDelay = 0;
+            tool.InitialDelay = 0;
+            tool.ReshowDelay = 0;
+            tool.SetToolTip(label1, "IP Server (ex = 192.168.1.100,localhost)");
