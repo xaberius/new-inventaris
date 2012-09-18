@@ -12,15 +12,28 @@ namespace New_Inventaris
 {
     public partial class FrmInsurance : Form
     {
+        // variable definition
         Insurance Insurance = new Insurance();
         Connection Connection = new Connection();
         private Boolean Edit;
+        private int Code;
         private string Deleted, IDx, InsuranceNamex, Addressx, Cityx, Phonex, Contactx;
 
-        public FrmInsurance()
+        public FrmInsurance(int Code)
         {
             InitializeComponent();
 
+            if (Code == 1)
+            {
+                this.Text = "Car Insurance";
+                this.Code = Code;
+            }
+            else
+            {
+                this.Text = "Building Insurance";
+            }
+
+            // connect to database server
             if (Insurance.toServer() != true)
             {
                 this.Close();
@@ -37,8 +50,9 @@ namespace New_Inventaris
 
         public void refreshData()
         {
+            // get all insurance data and display in grid
             List<InsuranceData> InsDatas = new List<InsuranceData>();
-            InsDatas = Insurance.getData();
+            InsDatas = Insurance.getData(this.Code);
             Grid.Rows.Clear();
             foreach (var data in InsDatas)
             {
@@ -49,6 +63,7 @@ namespace New_Inventaris
 
         public void button(bool Status)
         {
+            // button visible
             TxtId.Enabled = Status;
 
             CmdAdd.Visible = Status;
@@ -78,6 +93,7 @@ namespace New_Inventaris
 
         private void CmdDelete_Click(object sender, EventArgs e)
         {
+            //command delete data
             if (Deleted != "")
             {
                 if (MessageBox.Show("Are sure to delete this data?", "Delete", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
@@ -90,6 +106,7 @@ namespace New_Inventaris
 
         private void CmdEdit_Click(object sender, EventArgs e)
         {
+
             if (Deleted != "")
             {
                 Edit = true;
@@ -107,6 +124,7 @@ namespace New_Inventaris
 
         private void CmdSave_Click(object sender, EventArgs e)
         {
+            //command save and update data
             if (!Edit)
             {
                 MessageBox.Show(Insurance.insertData(TxtId.Text, TxtName.Text, TxtAddress.Text, TxtCity.Text, TxtPhone.Text, TxtContact.Text));

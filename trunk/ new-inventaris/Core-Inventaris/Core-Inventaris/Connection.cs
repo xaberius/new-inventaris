@@ -22,6 +22,7 @@ namespace Core_Inventaris
 
         public MySqlDataReader selectTable(string SQL)
         {
+            // function for execute a sql
             this.Cmd = DbCon.CreateCommand();
             Cmd.CommandText = SQL;
             this.Reader = Cmd.ExecuteReader();            
@@ -30,6 +31,7 @@ namespace Core_Inventaris
 
         public bool connection(string Server, string UserName, string Password)
         {
+            // function for connect database server
             this.Server = Server;
             this.UserName = UserName;
             this.Password = Password;
@@ -48,6 +50,7 @@ namespace Core_Inventaris
 
         public List<string> readSever()
         {
+            // function for reada data of database server
             List<string> Database = new List<string>();
             // read server,username and password database server form file ini.
             string server = ini.IniReadValue("Setting", "Server");
@@ -69,6 +72,7 @@ namespace Core_Inventaris
 
         public bool status(string Server)
         {
+            // function for check connection to database server
             DbCon.ConnectionString = Server;
             if (DbCon.State == System.Data.ConnectionState.Closed)
             {

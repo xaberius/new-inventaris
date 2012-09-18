@@ -10,11 +10,20 @@ namespace Core_Inventaris
 {
     public class Insurance
     {
+        // variable definition
         Connection Connetion = new Connection();
         MySqlDataReader Reader;
-        public List<InsuranceData> getData()
+        public List<InsuranceData> getData(int Code)
         {
-            Reader = Connetion.selectTable("select * from insurance");
+            // function for get all insurance data from database server
+            if (Code == 1)
+            {
+                Reader = Connetion.selectTable("select * from insurance where");
+            }
+            else
+            {
+                Reader = Connetion.selectTable("select * from insurance where");
+            }
            
             List<InsuranceData> InsDatas = new List<InsuranceData>();
             while (Reader.Read())
@@ -34,6 +43,7 @@ namespace Core_Inventaris
 
         public bool toServer()
         {
+            // function for chekking connection to database server
             List<string> Database = Connetion.readSever();
 
             try 
@@ -45,6 +55,7 @@ namespace Core_Inventaris
                 else 
                 {
                     return false;
+                    if
                 }
             }
             catch(Exception e)
@@ -56,6 +67,7 @@ namespace Core_Inventaris
 
         public string deleteData(string ID)
         {
+            // delete query
             Reader = Connetion.selectTable("Delete from insurance where id='" + ID + "'");
             Reader.Close();
             return "Deleted!";
@@ -63,6 +75,7 @@ namespace Core_Inventaris
 
         public string insertData(string ID,string InsuranceName,string Address, string City, string Phone, string Contact)
         {
+            // insert data query
             Reader = Connetion.selectTable("insert into insurance (id,insurancename,address,city,phone,contact) values ('" + ID + "','" +
                 InsuranceName + "','" + Address + "','" + City + "','" + Phone +"','" + Contact +"')");
             Reader.Close();
@@ -71,6 +84,7 @@ namespace Core_Inventaris
 
         public string updatetData(string ID, string InsuranceName, string Address, string City, string Phone, string Contact)
         {
+            // update data query
             Reader = Connetion.selectTable("update insurance set insurancename = '"+ InsuranceName +"', address='"+ Address + "', city ='"+
                     City + "',phone = '"+ Phone +"', contact = '"+ Contact +"' where id = '" + ID + "'");
             Reader.Close();
