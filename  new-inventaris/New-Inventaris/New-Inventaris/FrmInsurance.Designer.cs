@@ -213,7 +213,7 @@
             this.Column3,
             this.Column4,
             this.C});
-            this.Grid.Location = new System.Drawing.Point(7, 12);
+            this.Grid.Location = new System.Drawing.Point(9, 12);
             this.Grid.Name = "Grid";
             this.Grid.Size = new System.Drawing.Size(631, 198);
             this.Grid.TabIndex = 17;
