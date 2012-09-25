@@ -74,7 +74,7 @@
             this.buildingInsuranceToolStripMenuItem,
             this.typeInsuranceToolStripMenuItem});
             this.insuranceToolStripMenuItem.Name = "insuranceToolStripMenuItem";
-            this.insuranceToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.insuranceToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.insuranceToolStripMenuItem.Text = "Insurance";
             // 
             // carInsuranceToolStripMenuItem
@@ -89,12 +89,14 @@
             this.buildingInsuranceToolStripMenuItem.Name = "buildingInsuranceToolStripMenuItem";
             this.buildingInsuranceToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.buildingInsuranceToolStripMenuItem.Text = "Building Insurance";
+            this.buildingInsuranceToolStripMenuItem.Click += new System.EventHandler(this.buildingInsuranceToolStripMenuItem_Click);
             // 
             // typeInsuranceToolStripMenuItem
             // 
             this.typeInsuranceToolStripMenuItem.Name = "typeInsuranceToolStripMenuItem";
             this.typeInsuranceToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.typeInsuranceToolStripMenuItem.Text = "Type Insurance";
+            this.typeInsuranceToolStripMenuItem.Click += new System.EventHandler(this.typeInsuranceToolStripMenuItem_Click);
             // 
             // StatusBarX
             // 

@@ -18,11 +18,11 @@ namespace Core_Inventaris
             // function for get all insurance data from database server
             if (Code == 1)
             {
-                Reader = Connetion.selectTable("select * from insurance where");
+                Reader = Connetion.selectTable("select * from insurance where type = 1 order by id");
             }
             else
             {
-                Reader = Connetion.selectTable("select * from insurance where");
+                Reader = Connetion.selectTable("select * from insurance where type = 0  order by id");
             }
            
             List<InsuranceData> InsDatas = new List<InsuranceData>();
@@ -55,7 +55,6 @@ namespace Core_Inventaris
                 else 
                 {
                     return false;
-                    if
                 }
             }
             catch(Exception e)
@@ -73,11 +72,11 @@ namespace Core_Inventaris
             return "Deleted!";
         }
 
-        public string insertData(string ID,string InsuranceName,string Address, string City, string Phone, string Contact)
+        public string insertData(string ID,string InsuranceName,string Address, string City, string Phone, string Contact,int Type)
         {
             // insert data query
-            Reader = Connetion.selectTable("insert into insurance (id,insurancename,address,city,phone,contact) values ('" + ID + "','" +
-                InsuranceName + "','" + Address + "','" + City + "','" + Phone +"','" + Contact +"')");
+            Reader = Connetion.selectTable("insert into insurance (id,insurancename,address,city,phone,contact,type) values ('" + ID + "','" +
+                InsuranceName + "','" + Address + "','" + City + "','" + Phone +"','" + Contact +"'," + Type + ")");
             Reader.Close();
             return "Data Saved!";
         }

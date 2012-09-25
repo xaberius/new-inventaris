@@ -117,8 +117,20 @@ namespace New_Inventaris
         private void carInsuranceToolStripMenuItem_Click(object sender, EventArgs e)
         {   
             //open insurance menu
-            FrmInsurance FrmIns= new FrmInsurance(int Code);
+            FrmInsurance FrmIns= new FrmInsurance(1);
             FrmIns.Show();
+        }
+
+        private void buildingInsuranceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmInsurance FrmIns = new FrmInsurance(0);
+            FrmIns.Show();
+        }
+
+        private void typeInsuranceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmInsuranceType FrmInsType = new FrmInsuranceType();
+            FrmInsType.Show();
         }
 
     }

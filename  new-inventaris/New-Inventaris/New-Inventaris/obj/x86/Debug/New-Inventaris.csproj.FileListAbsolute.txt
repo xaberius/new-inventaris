@@ -12,3 +12,4 @@ D:\ new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\New-Inventaris.ex
 D:\ new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\New-Inventaris.pdb
 D:\ new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\New_Inventaris.FrmInsurance.resources
 D:\ new-inventaris\New-Inventaris\New-Inventaris\bin\Debug\New-Inventaris.exe.config
+D:\ new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\New_Inventaris.FrmInsuranceType.resources

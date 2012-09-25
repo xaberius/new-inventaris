@@ -61,7 +61,7 @@
             this.CmdAdd.Name = "CmdAdd";
             this.CmdAdd.Size = new System.Drawing.Size(75, 23);
             this.CmdAdd.TabIndex = 1;
-            this.CmdAdd.Text = "Add New";
+            this.CmdAdd.Text = "&Add New";
             this.CmdAdd.UseVisualStyleBackColor = true;
             this.CmdAdd.Click += new System.EventHandler(this.CmdAdd_Click);
             // 
@@ -71,7 +71,7 @@
             this.CmdEdit.Name = "CmdEdit";
             this.CmdEdit.Size = new System.Drawing.Size(75, 23);
             this.CmdEdit.TabIndex = 2;
-            this.CmdEdit.Text = "Edit";
+            this.CmdEdit.Text = "&Edit";
             this.CmdEdit.UseVisualStyleBackColor = true;
             this.CmdEdit.Click += new System.EventHandler(this.CmdEdit_Click);
             // 
@@ -81,7 +81,7 @@
             this.CmdDelete.Name = "CmdDelete";
             this.CmdDelete.Size = new System.Drawing.Size(75, 23);
             this.CmdDelete.TabIndex = 3;
-            this.CmdDelete.Text = "Delete";
+            this.CmdDelete.Text = "&Delete";
             this.CmdDelete.UseVisualStyleBackColor = true;
             this.CmdDelete.Click += new System.EventHandler(this.CmdDelete_Click);
             // 
@@ -91,7 +91,7 @@
             this.CmdCancel.Name = "CmdCancel";
             this.CmdCancel.Size = new System.Drawing.Size(75, 23);
             this.CmdCancel.TabIndex = 4;
-            this.CmdCancel.Text = "Cancel";
+            this.CmdCancel.Text = "&Cancel";
             this.CmdCancel.UseVisualStyleBackColor = true;
             this.CmdCancel.Click += new System.EventHandler(this.CmdCancel_Click);
             // 
@@ -101,7 +101,7 @@
             this.CmdSave.Name = "CmdSave";
             this.CmdSave.Size = new System.Drawing.Size(75, 23);
             this.CmdSave.TabIndex = 4;
-            this.CmdSave.Text = "Save";
+            this.CmdSave.Text = "&Save";
             this.CmdSave.UseVisualStyleBackColor = true;
             this.CmdSave.Click += new System.EventHandler(this.CmdSave_Click);
             // 
@@ -213,6 +213,7 @@
             this.Column3,
             this.Column4,
             this.C});
+            this.Grid.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.Grid.Location = new System.Drawing.Point(9, 12);
             this.Grid.Name = "Grid";
             this.Grid.Size = new System.Drawing.Size(631, 198);
@@ -277,6 +278,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmInsurance";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Insurance";
             this.Load += new System.EventHandler(this.FrmInsurance_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Grid)).EndInit();
