@@ -14,4 +14,10 @@ namespace Core_Inventaris
         public string Phone { get; set; }
         public string Contact { get; set; }
     }
+    public class InsuranceTypeData
+    {
+        public string Id { get; set; }
+        public string TypeName { get; set; }
+        public string Explain { get; set; }
+    }
 }

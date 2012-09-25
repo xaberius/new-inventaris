@@ -15,6 +15,7 @@ namespace New_Inventaris
         // variable definition
         Insurance Insurance = new Insurance();
         Connection Connection = new Connection();
+        private List<InsuranceData> InsDatas;
         private Boolean Edit;
         private int Code;
         private string Deleted, IDx, InsuranceNamex, Addressx, Cityx, Phonex, Contactx;
@@ -31,6 +32,7 @@ namespace New_Inventaris
             else
             {
                 this.Text = "Building Insurance";
+                this.Code = Code;
             }
 
             // connect to database server
@@ -51,7 +53,6 @@ namespace New_Inventaris
         public void refreshData()
         {
             // get all insurance data and display in grid
-            List<InsuranceData> InsDatas = new List<InsuranceData>();
             InsDatas = Insurance.getData(this.Code);
             Grid.Rows.Clear();
             foreach (var data in InsDatas)
@@ -64,8 +65,6 @@ namespace New_Inventaris
         public void button(bool Status)
         {
             // button visible
-            TxtId.Enabled = Status;
-
             CmdAdd.Visible = Status;
             CmdEdit.Visible = Status;
             CmdDelete.Visible = Status;
@@ -83,6 +82,7 @@ namespace New_Inventaris
         private void CmdAdd_Click(object sender, EventArgs e)
         {
             button(false);
+            TxtId.Text = string.Format("ins-{0:D4}", InsDatas.Count + 1);
         }
 
         private void CmdCancel_Click(object sender, EventArgs e)
@@ -106,7 +106,8 @@ namespace New_Inventaris
 
         private void CmdEdit_Click(object sender, EventArgs e)
         {
-
+            //editing mode
+            TxtId.Enabled = false;
             if (Deleted != "")
             {
                 Edit = true;
@@ -127,18 +128,20 @@ namespace New_Inventaris
             //command save and update data
             if (!Edit)
             {
-                MessageBox.Show(Insurance.insertData(TxtId.Text, TxtName.Text, TxtAddress.Text, TxtCity.Text, TxtPhone.Text, TxtContact.Text));
+                MessageBox.Show(Insurance.insertData(TxtId.Text, TxtName.Text, TxtAddress.Text, TxtCity.Text, TxtPhone.Text, TxtContact.Text,this.Code));
             }
             else
             {
                 MessageBox.Show(Insurance.updatetData(TxtId.Text, TxtName.Text, TxtAddress.Text, TxtCity.Text, TxtPhone.Text, TxtContact.Text));
             }
             clearField();
-            button(true);
+            refreshData();
+            button(true);            
         }
 
         private void Grid_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            // take value of grid cell
             Deleted = Grid.Rows[e.RowIndex].Cells[0].Value.ToString();
             IDx = Grid.Rows[e.RowIndex].Cells[0].Value.ToString();
             InsuranceNamex = Grid.Rows[e.RowIndex].Cells[1].Value.ToString();

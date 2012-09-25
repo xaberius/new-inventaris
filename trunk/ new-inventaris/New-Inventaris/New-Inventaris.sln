@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "New-Inventaris", "New-Inven
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core-Inventaris", "..\Core-Inventaris\Core-Inventaris\Core-Inventaris.csproj", "{2EF8476A-40B5-462B-921B-156A8D884EF4}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "New Inventaris", "New Inventaris\New Inventaris.vdproj", "{6E0D73ED-BAF5-4D7D-A541-F4C8603B03E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -19,6 +21,8 @@ Global
 		{2EF8476A-40B5-462B-921B-156A8D884EF4}.Debug|x86.Build.0 = Debug|x86
 		{2EF8476A-40B5-462B-921B-156A8D884EF4}.Release|x86.ActiveCfg = Release|x86
 		{2EF8476A-40B5-462B-921B-156A8D884EF4}.Release|x86.Build.0 = Release|x86
+		{6E0D73ED-BAF5-4D7D-A541-F4C8603B03E9}.Debug|x86.ActiveCfg = Debug
+		{6E0D73ED-BAF5-4D7D-A541-F4C8603B03E9}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmInsuranceType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInsuranceType.Designer.cs">
+      <DependentUpon>FrmInsuranceType.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmInsurance.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +70,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmInsuranceType.resx">
+      <DependentUpon>FrmInsuranceType.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmInsurance.resx">
       <DependentUpon>FrmInsurance.cs</DependentUpon>
     </EmbeddedResource>
