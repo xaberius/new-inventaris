@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmUtama));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.masterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.insuranceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.carInsuranceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buildingInsuranceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -62,10 +63,18 @@
             // masterToolStripMenuItem
             // 
             this.masterToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1,
             this.insuranceToolStripMenuItem});
             this.masterToolStripMenuItem.Name = "masterToolStripMenuItem";
             this.masterToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
             this.masterToolStripMenuItem.Text = "Master";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem1.Text = "Car";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // insuranceToolStripMenuItem
             // 
@@ -210,6 +219,7 @@
         private System.Windows.Forms.ToolStripMenuItem typeInsuranceToolStripMenuItem;
         private System.Windows.Forms.Timer timer3;
         private System.Windows.Forms.Timer timer4;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
     }
 }
 

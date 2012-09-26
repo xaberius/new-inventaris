@@ -82,6 +82,7 @@ namespace New_Inventaris
         private void CmdAdd_Click(object sender, EventArgs e)
         {
             button(false);
+            //id set a
             TxtId.Text = string.Format("ins-{0:D4}", InsDatas.Count + 1);
         }
 
@@ -89,6 +90,7 @@ namespace New_Inventaris
         {
             button(true);
             refreshData();
+            clearField();
         }
 
         private void CmdDelete_Click(object sender, EventArgs e)

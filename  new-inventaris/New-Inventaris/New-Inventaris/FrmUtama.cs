@@ -133,5 +133,11 @@ namespace New_Inventaris
             FrmInsType.Show();
         }
 
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmCarType FrmCarType = new FrmCarType();
+            FrmCarType.Show();
+        }
+
     }
 }
