@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="CommonClass.cs" />
     <Compile Include="Connection.cs" />
+    <Compile Include="CarType.cs" />
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>

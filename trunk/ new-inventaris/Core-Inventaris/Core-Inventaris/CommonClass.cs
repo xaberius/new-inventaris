@@ -20,4 +20,10 @@ namespace Core_Inventaris
         public string TypeName { get; set; }
         public string Explain { get; set; }
     }
+    public class CarTypeData
+    {
+        public string Id { get; set; }
+        public string TypeName { get; set; }
+        public string Variant { get; set; }
+    }
 }
