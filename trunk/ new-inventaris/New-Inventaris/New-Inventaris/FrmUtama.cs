@@ -118,25 +118,28 @@ namespace New_Inventaris
         {   
             //open insurance menu
             FrmInsurance FrmIns= new FrmInsurance(1);
-            FrmIns.Show();
+            FrmIns.Show(this);
         }
 
         private void buildingInsuranceToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //open insurance menu
             FrmInsurance FrmIns = new FrmInsurance(0);
-            FrmIns.Show();
+            FrmIns.Show(this);
         }
 
         private void typeInsuranceToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //open insurance type menu
             FrmInsuranceType FrmInsType = new FrmInsuranceType();
-            FrmInsType.Show();
+            FrmInsType.Show(this);
         }
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            //open car type menu
             FrmCarType FrmCarType = new FrmCarType();
-            FrmCarType.Show();
+            FrmCarType.Show(this);
         }
 
     }

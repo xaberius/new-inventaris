@@ -37,6 +37,12 @@
             this.carInsuranceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buildingInsuranceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.typeInsuranceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.employeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.employeeDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.occupationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.promotionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.translocationToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.branchOfficeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.StatusBarX = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -64,7 +70,9 @@
             // 
             this.masterToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1,
-            this.insuranceToolStripMenuItem});
+            this.insuranceToolStripMenuItem,
+            this.employeeToolStripMenuItem,
+            this.branchOfficeToolStripMenuItem});
             this.masterToolStripMenuItem.Name = "masterToolStripMenuItem";
             this.masterToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
             this.masterToolStripMenuItem.Text = "Master";
@@ -106,6 +114,47 @@
             this.typeInsuranceToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.typeInsuranceToolStripMenuItem.Text = "Type Insurance";
             this.typeInsuranceToolStripMenuItem.Click += new System.EventHandler(this.typeInsuranceToolStripMenuItem_Click);
+            // 
+            // employeeToolStripMenuItem
+            // 
+            this.employeeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.employeeDataToolStripMenuItem,
+            this.occupationToolStripMenuItem,
+            this.promotionToolStripMenuItem,
+            this.translocationToolStripMenuItem1});
+            this.employeeToolStripMenuItem.Name = "employeeToolStripMenuItem";
+            this.employeeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.employeeToolStripMenuItem.Text = "Employee";
+            // 
+            // employeeDataToolStripMenuItem
+            // 
+            this.employeeDataToolStripMenuItem.Name = "employeeDataToolStripMenuItem";
+            this.employeeDataToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.employeeDataToolStripMenuItem.Text = "Employee Data";
+            // 
+            // occupationToolStripMenuItem
+            // 
+            this.occupationToolStripMenuItem.Name = "occupationToolStripMenuItem";
+            this.occupationToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.occupationToolStripMenuItem.Text = "Occupation";
+            // 
+            // promotionToolStripMenuItem
+            // 
+            this.promotionToolStripMenuItem.Name = "promotionToolStripMenuItem";
+            this.promotionToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.promotionToolStripMenuItem.Text = "Promotion";
+            // 
+            // translocationToolStripMenuItem1
+            // 
+            this.translocationToolStripMenuItem1.Name = "translocationToolStripMenuItem1";
+            this.translocationToolStripMenuItem1.Size = new System.Drawing.Size(153, 22);
+            this.translocationToolStripMenuItem1.Text = "Translocation";
+            // 
+            // branchOfficeToolStripMenuItem
+            // 
+            this.branchOfficeToolStripMenuItem.Name = "branchOfficeToolStripMenuItem";
+            this.branchOfficeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.branchOfficeToolStripMenuItem.Text = "Branch Office";
             // 
             // StatusBarX
             // 
@@ -220,6 +269,12 @@
         private System.Windows.Forms.Timer timer3;
         private System.Windows.Forms.Timer timer4;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem employeeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem employeeDataToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem occupationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem promotionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem translocationToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem branchOfficeToolStripMenuItem;
     }
 }
 

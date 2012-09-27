@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Core_Inventaris;
+using System.Drawing.Drawing2D;
 
 namespace New_Inventaris
 {
@@ -42,7 +43,9 @@ namespace New_Inventaris
             }
             else
             {
-                this.Grid.Location = new Point(12, 12);
+                this.Grid.Location = new Point(19, 111);
+                Image.Height = this.Height + 1;
+                Image.Width = this.Width + 1;
                 refreshData();
             }
             Edit = false;
@@ -76,6 +79,10 @@ namespace New_Inventaris
 
         private void FrmInsurance_Load(object sender, EventArgs e)
         {
+            /*GraphicsPath path = new GraphicsPath();
+            path.AddEllipse(0,0,this.Width,this.Height);  
+            Region region = new Region(path);  
+            this.Region = region; */
             button(true);
         }
 
@@ -161,6 +168,16 @@ namespace New_Inventaris
             TxtCity.Text = "";
             TxtPhone.Text = "";
             TxtContact.Text = "";
+        }
+
+        private void Image_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CmdQuit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
     }
