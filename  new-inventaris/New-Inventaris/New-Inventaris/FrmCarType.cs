@@ -30,7 +30,7 @@ namespace New_Inventaris
             }
             else
             {
-                this.Grid.Location = new Point(12, 12);
+                this.Grid.Location = new Point(19, 111);
                 refreshData();
             }
             Edit = false;
@@ -137,6 +137,11 @@ namespace New_Inventaris
             TxtId.Text = "";
             TxtName.Text = "";
             TxtVariant.Text = "";
+        }
+
+        private void CmdQuit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
     }
