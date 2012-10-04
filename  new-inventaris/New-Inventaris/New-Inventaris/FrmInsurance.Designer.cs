@@ -39,7 +39,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.TxtAddress = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.TxtPhone = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.TxtContact = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -55,6 +54,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.CmdQuit = new System.Windows.Forms.Button();
             this.Image = new System.Windows.Forms.PictureBox();
+            this.TxtPhone = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.Grid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Image)).BeginInit();
             this.SuspendLayout();
@@ -120,6 +120,7 @@
             // 
             // TxtId
             // 
+            this.TxtId.Enabled = false;
             this.TxtId.Location = new System.Drawing.Point(110, 143);
             this.TxtId.Name = "TxtId";
             this.TxtId.Size = new System.Drawing.Size(100, 20);
@@ -156,13 +157,6 @@
             this.label3.Size = new System.Drawing.Size(45, 13);
             this.label3.TabIndex = 9;
             this.label3.Text = "Address";
-            // 
-            // TxtPhone
-            // 
-            this.TxtPhone.Location = new System.Drawing.Point(110, 234);
-            this.TxtPhone.Name = "TxtPhone";
-            this.TxtPhone.Size = new System.Drawing.Size(100, 20);
-            this.TxtPhone.TabIndex = 12;
             // 
             // label4
             // 
@@ -218,7 +212,7 @@
             this.Column4,
             this.Gird});
             this.Grid.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.Grid.Location = new System.Drawing.Point(19, 111);
+            this.Grid.Location = new System.Drawing.Point(22, 111);
             this.Grid.Name = "Grid";
             this.Grid.Size = new System.Drawing.Size(631, 198);
             this.Grid.TabIndex = 17;
@@ -287,6 +281,14 @@
             this.Image.TabStop = false;
             this.Image.Click += new System.EventHandler(this.Image_Click);
             // 
+            // TxtPhone
+            // 
+            this.TxtPhone.Location = new System.Drawing.Point(110, 234);
+            this.TxtPhone.Mask = "0000-000-000-000";
+            this.TxtPhone.Name = "TxtPhone";
+            this.TxtPhone.Size = new System.Drawing.Size(100, 20);
+            this.TxtPhone.TabIndex = 21;
+            // 
             // FrmInsurance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -297,7 +299,6 @@
             this.Controls.Add(this.Grid);
             this.Controls.Add(this.TxtContact);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.TxtPhone);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.TxtAddress);
             this.Controls.Add(this.label3);
@@ -313,6 +314,7 @@
             this.Controls.Add(this.TxtCity);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
+            this.Controls.Add(this.TxtPhone);
             this.Controls.Add(this.Image);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
@@ -342,7 +344,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox TxtAddress;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox TxtPhone;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox TxtContact;
         private System.Windows.Forms.Label label5;
@@ -358,5 +359,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox Image;
         private System.Windows.Forms.Button CmdQuit;
+        private System.Windows.Forms.MaskedTextBox TxtPhone;
     }
 }

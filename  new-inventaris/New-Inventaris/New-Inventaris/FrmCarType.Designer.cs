@@ -44,8 +44,8 @@
             this.CmdEdit = new System.Windows.Forms.Button();
             this.CmdAdd = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.Image = new System.Windows.Forms.PictureBox();
             this.CmdQuit = new System.Windows.Forms.Button();
+            this.Image = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Grid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Image)).BeginInit();
             this.SuspendLayout();
@@ -118,6 +118,7 @@
             // 
             // TxtId
             // 
+            this.TxtId.Enabled = false;
             this.TxtId.Location = new System.Drawing.Point(114, 129);
             this.TxtId.Name = "TxtId";
             this.TxtId.Size = new System.Drawing.Size(100, 20);
@@ -193,16 +194,6 @@
             this.label7.TabIndex = 42;
             this.label7.Text = "Car Type";
             // 
-            // Image
-            // 
-            this.Image.Image = global::New_Inventaris.Properties.Resources.Form2;
-            this.Image.Location = new System.Drawing.Point(0, 0);
-            this.Image.Name = "Image";
-            this.Image.Size = new System.Drawing.Size(665, 397);
-            this.Image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Image.TabIndex = 43;
-            this.Image.TabStop = false;
-            // 
             // CmdQuit
             // 
             this.CmdQuit.Location = new System.Drawing.Point(564, 315);
@@ -212,6 +203,16 @@
             this.CmdQuit.Text = "&Quit";
             this.CmdQuit.UseVisualStyleBackColor = true;
             this.CmdQuit.Click += new System.EventHandler(this.CmdQuit_Click);
+            // 
+            // Image
+            // 
+            this.Image.Image = global::New_Inventaris.Properties.Resources.Form2;
+            this.Image.Location = new System.Drawing.Point(-2, 0);
+            this.Image.Name = "Image";
+            this.Image.Size = new System.Drawing.Size(665, 397);
+            this.Image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Image.TabIndex = 43;
+            this.Image.TabStop = false;
             // 
             // FrmCarType
             // 
@@ -264,7 +265,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox Image;
         private System.Windows.Forms.Button CmdQuit;
+        private System.Windows.Forms.PictureBox Image;
     }
 }

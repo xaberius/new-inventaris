@@ -26,4 +26,24 @@ namespace Core_Inventaris
         public string TypeName { get; set; }
         public string Variant { get; set; }
     }
+
+    public class Employee
+    {
+        public string Id { get; set; }
+        public string Name { get; set; }
+        public int BrithDate { get; set; }
+        public string Address { get; set; }
+        public int JoinDate { get; set; }
+        public string Occupation { get; set; }
+        public string BranchOffice { get; set; }
+    }
+
+    public class BranchOfficeData
+    {
+        public string Id { get; set; }
+        public string BranchName { get; set; }
+        public string Address { get; set; }
+        public string Phone { get; set; }
+    }
+
 }
