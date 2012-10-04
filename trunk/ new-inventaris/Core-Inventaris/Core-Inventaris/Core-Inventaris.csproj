@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BranchOffice.cs" />
     <Compile Include="CommonClass.cs" />
     <Compile Include="Connection.cs" />
     <Compile Include="CarType.cs" />

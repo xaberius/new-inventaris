@@ -142,5 +142,12 @@ namespace New_Inventaris
             FrmCarType.Show(this);
         }
 
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            //open branch office menu
+            FrmBranchOffice FrmBranchOffice = new FrmBranchOffice();
+            FrmBranchOffice.Show(this);
+        }
+
     }
 }
