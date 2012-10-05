@@ -144,6 +144,7 @@
             this.occupationToolStripMenuItem.Name = "occupationToolStripMenuItem";
             this.occupationToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.occupationToolStripMenuItem.Text = "Occupation";
+            this.occupationToolStripMenuItem.Click += new System.EventHandler(this.occupationToolStripMenuItem_Click);
             // 
             // promotionToolStripMenuItem
             // 

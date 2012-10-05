@@ -149,5 +149,12 @@ namespace New_Inventaris
             FrmBranchOffice.Show(this);
         }
 
+        private void occupationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //open occupation menu
+            FormOccupation FrmOccupation = new FormOccupation();
+            FrmOccupation.Show(this);
+        }
+
     }
 }

@@ -15,3 +15,4 @@ D:\ new-inventaris\New-Inventaris\New-Inventaris\bin\Debug\New-Inventaris.exe.co
 D:\ new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\New_Inventaris.FrmInsuranceType.resources
 D:\ new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\New_Inventaris.FrmCarType.resources
 D:\ new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\New_Inventaris.FrmBranchOffice.resources
+D:\ new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\New_Inventaris.FormOccupation.resources
