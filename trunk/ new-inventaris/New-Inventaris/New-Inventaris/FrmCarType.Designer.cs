@@ -60,7 +60,7 @@
             this.Column5,
             this.Column2});
             this.Grid.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.Grid.Location = new System.Drawing.Point(19, 111);
+            this.Grid.Location = new System.Drawing.Point(140, 111);
             this.Grid.Name = "Grid";
             this.Grid.Size = new System.Drawing.Size(625, 198);
             this.Grid.TabIndex = 35;

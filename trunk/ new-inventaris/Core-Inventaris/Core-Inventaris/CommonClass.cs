@@ -46,4 +46,10 @@ namespace Core_Inventaris
         public string Phone { get; set; }
     }
 
+    public class OccupationData
+    {
+        public string Id { get; set; }
+        public string OccupationName { get; set; }
+        public string Explaination { get; set; }
+    }
 }
