@@ -10,6 +10,26 @@ namespace Core_Inventaris
     {
         INIFile ini = new INIFile(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\new-inventaris.ini");
 
+        public DateTime TimestampToLocal(int? timestamp)
+        {
+            DateTime origin = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+            if (timestamp.HasValue)
+            {
+                //Console.WriteLine("before tolocal {0}, after tolocal {1}", origin.AddSeconds((double)timestamp), origin.AddSeconds((double)timestamp).ToLocalTime());
+                return origin.AddSeconds((double)timestamp).ToLocalTime();
+            }
+            else
+                return origin;
+        }
+
+
+        public int LocalToTimestamp(DateTime date)
+        {
+            DateTime origin = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+            TimeSpan diff = date.ToUniversalTime() - origin;
+            return (int)Math.Floor(diff.TotalSeconds);
+        }
+        
         public bool readSerialHardware()
         {
             bool SNBoard = false;
@@ -93,4 +113,5 @@ namespace Core_Inventaris
         }
 
     }
+
 }

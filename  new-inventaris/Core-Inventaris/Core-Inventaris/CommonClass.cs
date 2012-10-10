@@ -27,7 +27,7 @@ namespace Core_Inventaris
         public string Variant { get; set; }
     }
 
-    public class Employee
+    public class EmployeeData
     {
         public string Id { get; set; }
         public string Name { get; set; }
@@ -51,5 +51,12 @@ namespace Core_Inventaris
         public string Id { get; set; }
         public string OccupationName { get; set; }
         public string Explaination { get; set; }
+    }
+
+    public class EmployeeComplete
+    {
+        public List<EmployeeData> ED { get; set; }
+        public List<OccupationData> OD { get; set; }
+        public List<BranchOfficeData> BOD { get; set; }
     }
 }

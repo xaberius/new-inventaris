@@ -138,6 +138,7 @@
             this.employeeDataToolStripMenuItem.Name = "employeeDataToolStripMenuItem";
             this.employeeDataToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.employeeDataToolStripMenuItem.Text = "Employee Data";
+            this.employeeDataToolStripMenuItem.Click += new System.EventHandler(this.employeeDataToolStripMenuItem_Click);
             // 
             // occupationToolStripMenuItem
             // 
