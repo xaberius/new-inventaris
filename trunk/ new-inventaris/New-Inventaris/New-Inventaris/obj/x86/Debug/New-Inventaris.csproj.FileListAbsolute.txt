@@ -16,3 +16,4 @@ D:\ new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\New_Inventaris.Fr
 D:\ new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\New_Inventaris.FrmCarType.resources
 D:\ new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\New_Inventaris.FrmBranchOffice.resources
 D:\ new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\New_Inventaris.FormOccupation.resources
+D:\ new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\New_Inventaris.FrmEmployee.resources

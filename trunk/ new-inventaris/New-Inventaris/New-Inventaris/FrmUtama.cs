@@ -156,5 +156,12 @@ namespace New_Inventaris
             FrmOccupation.Show(this);
         }
 
+        private void employeeDataToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //open employee menu
+            FrmEmployee FrmEmployee = new FrmEmployee();
+            FrmEmployee.Show(this);
+        }
+
     }
 }

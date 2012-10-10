@@ -89,8 +89,18 @@ namespace New_Inventaris
         private void CmdAdd_Click(object sender, EventArgs e)
         {
             button(false);
-            //id set a
-            TxtId.Text = string.Format("ins-{0:D4}", InsDatas.Count + 1);
+            //id set automatic
+            if (Code == 1)
+            {
+                this.Text = "Car Insurance";
+                TxtId.Text = string.Format("insc-{0:D4}", InsDatas.Count + 1);
+            }
+            else
+            {
+                this.Text = "Building Insurance";
+                TxtId.Text = string.Format("insb-{0:D4}", InsDatas.Count + 1);
+            }
+            
         }
 
         private void CmdCancel_Click(object sender, EventArgs e)
@@ -151,13 +161,19 @@ namespace New_Inventaris
         private void Grid_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             // take value of grid cell
-            Deleted = Grid.Rows[e.RowIndex].Cells[0].Value.ToString();
-            IDx = Grid.Rows[e.RowIndex].Cells[0].Value.ToString();
-            InsuranceNamex = Grid.Rows[e.RowIndex].Cells[1].Value.ToString();
-            Addressx = Grid.Rows[e.RowIndex].Cells[2].Value.ToString();
-            Cityx = Grid.Rows[e.RowIndex].Cells[3].Value.ToString();
-            Phonex = Grid.Rows[e.RowIndex].Cells[4].Value.ToString();
-            Contactx = Grid.Rows[e.RowIndex].Cells[5].Value.ToString();
+            //take value of grid cell
+            //MessageBox.Show(e.ColumnIndex.ToString() + " " + e.RowIndex.ToString());
+            if (e.RowIndex > -1)
+            {
+                Deleted = Grid.Rows[e.RowIndex].Cells[0].Value.ToString();
+                IDx = Grid.Rows[e.RowIndex].Cells[0].Value.ToString();
+                InsuranceNamex = Grid.Rows[e.RowIndex].Cells[1].Value.ToString();
+                Addressx = Grid.Rows[e.RowIndex].Cells[2].Value.ToString();
+                Cityx = Grid.Rows[e.RowIndex].Cells[3].Value.ToString();
+                Phonex = Grid.Rows[e.RowIndex].Cells[4].Value.ToString();
+                Contactx = Grid.Rows[e.RowIndex].Cells[5].Value.ToString();
+            }
+            
         }
 
         public void clearField()

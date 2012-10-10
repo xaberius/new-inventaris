@@ -112,7 +112,11 @@ namespace New_Inventaris
         private void Grid_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             //take value of grid cell
-            Deleted = Grid.Rows[e.RowIndex].Cells[0].Value.ToString();
+            //MessageBox.Show(e.ColumnIndex.ToString() + " " + e.RowIndex.ToString());
+            if (e.RowIndex > -1)
+            {
+                Deleted = Grid.Rows[e.RowIndex].Cells[0].Value.ToString();
+            }
         }
 
         private void CmdSave_Click(object sender, EventArgs e)

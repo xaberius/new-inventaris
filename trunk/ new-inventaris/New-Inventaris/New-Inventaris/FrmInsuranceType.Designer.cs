@@ -62,6 +62,7 @@
             this.Grid.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.Grid.Location = new System.Drawing.Point(19, 111);
             this.Grid.Name = "Grid";
+            this.Grid.RowHeadersVisible = false;
             this.Grid.Size = new System.Drawing.Size(625, 198);
             this.Grid.TabIndex = 23;
             this.Grid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Grid_CellClick);
