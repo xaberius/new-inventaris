@@ -8,3 +8,13 @@ D:\ new-inventaris\Core-Inventaris\Core-Inventaris\obj\x86\Debug\GenerateResourc
 D:\ new-inventaris\Core-Inventaris\Core-Inventaris\obj\x86\Debug\Core-Inventaris.exe
 D:\ new-inventaris\Core-Inventaris\Core-Inventaris\obj\x86\Debug\Core-Inventaris.pdb
 D:\ new-inventaris\Core-Inventaris\Core-Inventaris\obj\x86\Debug\Core_Inventaris.FrmLogin.resources
+C:\Ayuk\Agus top design\new-inventaris\Core-Inventaris\Core-Inventaris\obj\x86\Debug\Core-Inventaris.exe
+C:\Ayuk\Agus top design\new-inventaris\Core-Inventaris\Core-Inventaris\obj\x86\Debug\Core-Inventaris.pdb
+C:\Ayuk\Agus top design\new-inventaris\Core-Inventaris\Core-Inventaris\bin\Debug\Core-Inventaris.exe
+C:\Ayuk\Agus top design\new-inventaris\Core-Inventaris\Core-Inventaris\bin\Debug\Core-Inventaris.pdb
+C:\Ayuk\Agus top design\new-inventaris\Core-Inventaris\Core-Inventaris\bin\Debug\MySql.Data.dll
+C:\Ayuk\Agus top design\new-inventaris\Core-Inventaris\Core-Inventaris\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Ayuk\Agus top design\new-inventaris\Core-Inventaris\Core-Inventaris\obj\x86\Debug\Core_Inventaris.FrmLogin.resources
+C:\Ayuk\Agus top design\new-inventaris\Core-Inventaris\Core-Inventaris\obj\x86\Debug\Core_Inventaris.Properties.Resources.resources
+C:\Ayuk\Agus top design\new-inventaris\Core-Inventaris\Core-Inventaris\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Ayuk\Agus top design\new-inventaris\Core-Inventaris\Core-Inventaris\obj\x86\Debug\GenerateResource.write.1.tlog

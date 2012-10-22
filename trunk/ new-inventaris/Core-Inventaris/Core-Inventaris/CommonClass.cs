@@ -59,4 +59,13 @@ namespace Core_Inventaris
         public List<OccupationData> OD { get; set; }
         public List<BranchOfficeData> BOD { get; set; }
     }
+
+    public class RepositionData
+    {
+        public int RepositionDate { get; set; }
+        public string EmployeeID { get; set; }
+        public string From { get; set; }
+        public string To { get; set; }
+    }
+
 }

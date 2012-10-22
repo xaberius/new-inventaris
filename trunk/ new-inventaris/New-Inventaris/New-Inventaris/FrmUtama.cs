@@ -163,5 +163,12 @@ namespace New_Inventaris
             FrmEmployee.Show(this);
         }
 
+        private void promotionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //open employee menu
+            FrmPromotion FrmPromotion = new FrmPromotion();
+            FrmPromotion.Show(this);
+        }
+
     }
 }
