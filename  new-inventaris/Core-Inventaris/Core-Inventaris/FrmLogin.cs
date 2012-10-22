@@ -12,7 +12,7 @@ namespace Core_Inventaris
     public partial class FrmLogin : Form
     {
         Connection Connection = new Connection();
-        SystemCore SystemCore;
+        SystemCore SystemCore = new SystemCore();
         public FrmLogin()
         {
             InitializeComponent();
@@ -31,10 +31,19 @@ namespace Core_Inventaris
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            List<string> Database = Connection.readSever();
-            TxtServer.Text = Database[0];
-            TxtUser.Text = Database[1];
-            TxtPass.Text = Database[2];
+            try
+            {
+                List<string> Database = Connection.readSever();
+                TxtServer.Text = Database[0];
+                TxtUser.Text = Database[1];
+                TxtPass.Text = Database[2];
+            }
+            catch (Exception ex)
+            { 
+                Console.WriteLine(ex.Message); 
+            }
+            
+            
         }
     }
 }

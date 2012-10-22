@@ -151,7 +151,8 @@
             // 
             this.promotionToolStripMenuItem.Name = "promotionToolStripMenuItem";
             this.promotionToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
-            this.promotionToolStripMenuItem.Text = "Promotion";
+            this.promotionToolStripMenuItem.Text = "Reposition";
+            this.promotionToolStripMenuItem.Click += new System.EventHandler(this.promotionToolStripMenuItem_Click);
             // 
             // translocationToolStripMenuItem1
             // 
