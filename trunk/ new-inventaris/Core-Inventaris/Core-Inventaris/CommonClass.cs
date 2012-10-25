@@ -68,4 +68,11 @@ namespace Core_Inventaris
         public string To { get; set; }
     }
 
+    public class ReplacementData
+    {
+        public int ReplacementDate { get; set; }
+        public string EmployeeID { get; set; }
+        public string From { get; set; }
+        public string To { get; set; }
+    }
 }

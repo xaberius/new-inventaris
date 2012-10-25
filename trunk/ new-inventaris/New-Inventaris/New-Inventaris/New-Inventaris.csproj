@@ -95,6 +95,12 @@
     <Compile Include="FrmPromotion.Designer.cs">
       <DependentUpon>FrmPromotion.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmReplacement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReplacement.Designer.cs">
+      <DependentUpon>FrmReplacement.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmUtama.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPromotion.resx">
       <DependentUpon>FrmPromotion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReplacement.resx">
+      <DependentUpon>FrmReplacement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmUtama.resx">
       <DependentUpon>FrmUtama.cs</DependentUpon>
