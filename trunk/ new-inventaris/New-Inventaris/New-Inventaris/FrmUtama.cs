@@ -170,5 +170,12 @@ namespace New_Inventaris
             FrmPromotion.Show(this);
         }
 
+        private void translocationToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            //open replacement menu
+            FrmReplacement FrmReplacement = new FrmReplacement();
+            FrmReplacement.Show(this);
+        }
+
     }
 }

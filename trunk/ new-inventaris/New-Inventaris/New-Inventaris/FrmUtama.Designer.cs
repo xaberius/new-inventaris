@@ -159,6 +159,7 @@
             this.translocationToolStripMenuItem1.Name = "translocationToolStripMenuItem1";
             this.translocationToolStripMenuItem1.Size = new System.Drawing.Size(153, 22);
             this.translocationToolStripMenuItem1.Text = "Translocation";
+            this.translocationToolStripMenuItem1.Click += new System.EventHandler(this.translocationToolStripMenuItem1_Click);
             // 
             // StatusBarX
             // 
