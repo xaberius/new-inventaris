@@ -34,15 +34,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="MySql.Data, Version=6.5.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\External Lib\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,53 +50,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormOccupation.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormOccupation.Designer.cs">
-      <DependentUpon>FormOccupation.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmBranchOffice.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmBranchOffice.Designer.cs">
-      <DependentUpon>FrmBranchOffice.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmCarType.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmCarType.Designer.cs">
-      <DependentUpon>FrmCarType.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmEmployee.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmEmployee.Designer.cs">
-      <DependentUpon>FrmEmployee.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmInsuranceType.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmInsuranceType.Designer.cs">
-      <DependentUpon>FrmInsuranceType.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmInsurance.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmInsurance.Designer.cs">
       <DependentUpon>FrmInsurance.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmPromotion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmPromotion.Designer.cs">
-      <DependentUpon>FrmPromotion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmReplacement.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmReplacement.Designer.cs">
-      <DependentUpon>FrmReplacement.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmUtama.cs">
       <SubType>Form</SubType>
@@ -109,29 +64,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormOccupation.resx">
-      <DependentUpon>FormOccupation.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmBranchOffice.resx">
-      <DependentUpon>FrmBranchOffice.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmCarType.resx">
-      <DependentUpon>FrmCarType.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmEmployee.resx">
-      <DependentUpon>FrmEmployee.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmInsuranceType.resx">
-      <DependentUpon>FrmInsuranceType.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmInsurance.resx">
       <DependentUpon>FrmInsurance.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmPromotion.resx">
-      <DependentUpon>FrmPromotion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmReplacement.resx">
-      <DependentUpon>FrmReplacement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmUtama.resx">
       <DependentUpon>FrmUtama.cs</DependentUpon>
@@ -165,9 +99,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\internet_business_23-wallpaper-1366x768.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Form1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

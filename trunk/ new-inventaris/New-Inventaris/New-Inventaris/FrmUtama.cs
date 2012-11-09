@@ -13,7 +13,6 @@ namespace New_Inventaris
 {
     public partial class FrmUtama : Form
     {
-        // variable definition
         Connection Connection = new Connection();
         SystemCore SystemCore =new SystemCore();
         Insurance Insurance = new Insurance();
@@ -39,7 +38,6 @@ namespace New_Inventaris
         {
             List<string> Database = Connection.readSever();
 
-            //trying to connect to database server
             try
             {
                 Connection.connection(Database[0], Database[1], Database[2]);
@@ -54,8 +52,6 @@ namespace New_Inventaris
             }            
 
             genuineCheck();
-
-            //setting status bar
             toolStripStatusLabel2.Text = "";
             toolStripProgressBar1.AutoSize = false;
             toolStripStatusLabel1.AutoSize = false;
@@ -71,7 +67,6 @@ namespace New_Inventaris
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            //running text
             string Merk = " <== Xaberius Developer ==> ";                
 
             toolStripStatusLabel2.Text = toolStripStatusLabel2.Text + Merk[X];
@@ -79,6 +74,7 @@ namespace New_Inventaris
 
             if (this.X == Merk.Length)
             {
+                //toolStripStatusLabel2.Text = "";
                 this.X = 0;
             }
         }
@@ -99,6 +95,11 @@ namespace New_Inventaris
                 timer3.Enabled = false;
                 timer4.Enabled = true;
             }
+            //else if (toolStripProgressBar1.Value >= toolStripProgressBar1.Maximum)
+            //{
+            //    toolStripProgressBar1.Value = toolStripProgressBar1.Value - 10;
+            //}
+
         }
 
         private void timer4_Tick(object sender, EventArgs e)
@@ -116,65 +117,8 @@ namespace New_Inventaris
 
         private void carInsuranceToolStripMenuItem_Click(object sender, EventArgs e)
         {   
-            //open insurance menu
-            FrmInsurance FrmIns= new FrmInsurance(1);
-            FrmIns.Show(this);
-        }
-
-        private void buildingInsuranceToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //open insurance menu
-            FrmInsurance FrmIns = new FrmInsurance(0);
-            FrmIns.Show(this);
-        }
-
-        private void typeInsuranceToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //open insurance type menu
-            FrmInsuranceType FrmInsType = new FrmInsuranceType();
-            FrmInsType.Show(this);
-        }
-
-        private void toolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            //open car type menu
-            FrmCarType FrmCarType = new FrmCarType();
-            FrmCarType.Show(this);
-        }
-
-        private void toolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-            //open branch office menu
-            FrmBranchOffice FrmBranchOffice = new FrmBranchOffice();
-            FrmBranchOffice.Show(this);
-        }
-
-        private void occupationToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //open occupation menu
-            FormOccupation FrmOccupation = new FormOccupation();
-            FrmOccupation.Show(this);
-        }
-
-        private void employeeDataToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //open employee menu
-            FrmEmployee FrmEmployee = new FrmEmployee();
-            FrmEmployee.Show(this);
-        }
-
-        private void promotionToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //open employee menu
-            FrmPromotion FrmPromotion = new FrmPromotion();
-            FrmPromotion.Show(this);
-        }
-
-        private void translocationToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            //open replacement menu
-            FrmReplacement FrmReplacement = new FrmReplacement();
-            FrmReplacement.Show(this);
+            FrmInsurance FrmIns= new FrmInsurance();
+            FrmIns.Show();
         }
 
     }
