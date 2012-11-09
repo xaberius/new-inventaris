@@ -12,30 +12,3 @@ D:\ new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\New-Inventaris.ex
 D:\ new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\New-Inventaris.pdb
 D:\ new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\New_Inventaris.FrmInsurance.resources
 D:\ new-inventaris\New-Inventaris\New-Inventaris\bin\Debug\New-Inventaris.exe.config
-D:\ new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\New_Inventaris.FrmInsuranceType.resources
-D:\ new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\New_Inventaris.FrmCarType.resources
-D:\ new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\New_Inventaris.FrmBranchOffice.resources
-D:\ new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\New_Inventaris.FormOccupation.resources
-D:\ new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\New_Inventaris.FrmEmployee.resources
-D:\ new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\New_Inventaris.FrmPromotion.resources
-C:\Ayuk\Agus top design\new-inventaris\New-Inventaris\New-Inventaris\bin\Debug\New-Inventaris.exe.config
-C:\Ayuk\Agus top design\new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\New-Inventaris.exe
-C:\Ayuk\Agus top design\new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\New-Inventaris.pdb
-C:\Ayuk\Agus top design\new-inventaris\New-Inventaris\New-Inventaris\bin\Debug\New-Inventaris.exe
-C:\Ayuk\Agus top design\new-inventaris\New-Inventaris\New-Inventaris\bin\Debug\New-Inventaris.pdb
-C:\Ayuk\Agus top design\new-inventaris\New-Inventaris\New-Inventaris\bin\Debug\Core-Inventaris.exe
-C:\Ayuk\Agus top design\new-inventaris\New-Inventaris\New-Inventaris\bin\Debug\MySql.Data.dll
-C:\Ayuk\Agus top design\new-inventaris\New-Inventaris\New-Inventaris\bin\Debug\Core-Inventaris.pdb
-C:\Ayuk\Agus top design\new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Ayuk\Agus top design\new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\New_Inventaris.FormOccupation.resources
-C:\Ayuk\Agus top design\new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\New_Inventaris.FrmBranchOffice.resources
-C:\Ayuk\Agus top design\new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\New_Inventaris.FrmCarType.resources
-C:\Ayuk\Agus top design\new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\New_Inventaris.FrmEmployee.resources
-C:\Ayuk\Agus top design\new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\New_Inventaris.FrmInsuranceType.resources
-C:\Ayuk\Agus top design\new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\New_Inventaris.FrmInsurance.resources
-C:\Ayuk\Agus top design\new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\New_Inventaris.FrmPromotion.resources
-C:\Ayuk\Agus top design\new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\New_Inventaris.FrmUtama.resources
-C:\Ayuk\Agus top design\new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\New_Inventaris.Properties.Resources.resources
-C:\Ayuk\Agus top design\new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\GenerateResource.read.1.tlog
-C:\Ayuk\Agus top design\new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\GenerateResource.write.1.tlog
-C:\Ayuk\Agus top design\new-inventaris\New-Inventaris\New-Inventaris\obj\x86\Debug\New_Inventaris.FrmReplacement.resources
