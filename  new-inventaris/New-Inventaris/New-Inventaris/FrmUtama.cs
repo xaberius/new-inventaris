@@ -121,11 +121,10 @@ namespace New_Inventaris
             FrmIns.Show();
         }
 
-<<<<<<< .mine
         private void buildingInsuranceToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //open insurance menu
-            FrmInsurance FrmIns = new FrmInsurance(0);
+            FrmInsurance FrmIns = new FrmInsurance();
             FrmIns.Show(this);
         }
 
@@ -171,8 +170,6 @@ namespace New_Inventaris
             FrmPromotion.Show(this);
         }
 
-=======
->>>>>>> .r20
         private void translocationToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             //open replacement menu

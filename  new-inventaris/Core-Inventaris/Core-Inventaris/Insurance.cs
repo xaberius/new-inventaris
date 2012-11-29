@@ -63,7 +63,6 @@ namespace Core_Inventaris
                 return false;
             }
         }
-<<<<<<< .mine
 
         public string deleteData()
         {
@@ -71,7 +70,6 @@ namespace Core_Inventaris
             return "Deleted!";
         }
         
-=======
 
         public string deleteData(string ID)
         {
@@ -98,6 +96,6 @@ namespace Core_Inventaris
             Reader.Close();
             return "Data Update!";
         }
->>>>>>> .r19
+
     }
 }

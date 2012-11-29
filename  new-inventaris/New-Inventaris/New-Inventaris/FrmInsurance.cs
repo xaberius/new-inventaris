@@ -32,7 +32,7 @@ namespace New_Inventaris
         public void refreshData()
         {
             List<InsuranceData> InsDatas = new List<InsuranceData>();
-            InsDatas = Insurance.getData();
+            InsDatas = Insurance.getData(0);
             Grid.Items.Clear();
             foreach (var data in InsDatas)
             {

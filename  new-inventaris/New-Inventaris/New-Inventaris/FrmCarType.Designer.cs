@@ -207,7 +207,7 @@
             // 
             // Image
             // 
-            this.Image.Image = global::New_Inventaris.Properties.Resources.Form2;
+            this.Image.Image = global::New_Inventaris.Properties.Resources.Form1;
             this.Image.Location = new System.Drawing.Point(-2, 0);
             this.Image.Name = "Image";
             this.Image.Size = new System.Drawing.Size(665, 397);
