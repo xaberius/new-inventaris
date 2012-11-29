@@ -60,6 +60,13 @@ namespace New_Inventaris.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap Form1 {
+            get {
+                object obj = ResourceManager.GetObject("Form1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap internet_business_23_wallpaper_1366x768 {
             get {
                 object obj = ResourceManager.GetObject("internet_business_23-wallpaper-1366x768", resourceCulture);

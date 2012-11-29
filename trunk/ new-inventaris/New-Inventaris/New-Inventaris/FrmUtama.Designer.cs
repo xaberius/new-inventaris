@@ -95,56 +95,10 @@
             this.typeInsuranceToolStripMenuItem.Name = "typeInsuranceToolStripMenuItem";
             this.typeInsuranceToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.typeInsuranceToolStripMenuItem.Text = "Type Insurance";
+            //
             // 
-<<<<<<< .mine
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem2.Text = "Branch Office";
-            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
-            // 
-            // employeeToolStripMenuItem
-            // 
-            this.employeeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.employeeDataToolStripMenuItem,
-            this.occupationToolStripMenuItem,
-            this.promotionToolStripMenuItem,
-            this.translocationToolStripMenuItem1});
-            this.employeeToolStripMenuItem.Name = "employeeToolStripMenuItem";
-            this.employeeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.employeeToolStripMenuItem.Text = "Employee";
-            // 
-            // employeeDataToolStripMenuItem
-            // 
-            this.employeeDataToolStripMenuItem.Name = "employeeDataToolStripMenuItem";
-            this.employeeDataToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
-            this.employeeDataToolStripMenuItem.Text = "Employee Data";
-            this.employeeDataToolStripMenuItem.Click += new System.EventHandler(this.employeeDataToolStripMenuItem_Click);
-            // 
-            // occupationToolStripMenuItem
-            // 
-            this.occupationToolStripMenuItem.Name = "occupationToolStripMenuItem";
-            this.occupationToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
-            this.occupationToolStripMenuItem.Text = "Occupation";
-            this.occupationToolStripMenuItem.Click += new System.EventHandler(this.occupationToolStripMenuItem_Click);
-            // 
-            // promotionToolStripMenuItem
-            // 
-            this.promotionToolStripMenuItem.Name = "promotionToolStripMenuItem";
-            this.promotionToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
-            this.promotionToolStripMenuItem.Text = "Reposition";
-            this.promotionToolStripMenuItem.Click += new System.EventHandler(this.promotionToolStripMenuItem_Click);
-            // 
-            // translocationToolStripMenuItem1
-            // 
-            this.translocationToolStripMenuItem1.Name = "translocationToolStripMenuItem1";
-            this.translocationToolStripMenuItem1.Size = new System.Drawing.Size(157, 22);
-            this.translocationToolStripMenuItem1.Text = "Translocation";
-            this.translocationToolStripMenuItem1.Click += new System.EventHandler(this.translocationToolStripMenuItem1_Click);
-            // 
-=======
->>>>>>> .r20
+
+
             // StatusBarX
             // 
             this.StatusBarX.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
