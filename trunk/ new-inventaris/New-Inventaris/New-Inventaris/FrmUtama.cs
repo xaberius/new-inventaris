@@ -121,5 +121,64 @@ namespace New_Inventaris
             FrmIns.Show();
         }
 
+<<<<<<< .mine
+        private void buildingInsuranceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //open insurance menu
+            FrmInsurance FrmIns = new FrmInsurance(0);
+            FrmIns.Show(this);
+        }
+
+        private void typeInsuranceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //open insurance type menu
+            FrmInsuranceType FrmInsType = new FrmInsuranceType();
+            FrmInsType.Show(this);
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            //open car type menu
+            FrmCarType FrmCarType = new FrmCarType();
+            FrmCarType.Show(this);
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            //open branch office menu
+            FrmBranchOffice FrmBranchOffice = new FrmBranchOffice();
+            FrmBranchOffice.Show(this);
+        }
+
+        private void occupationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //open occupation menu
+            FormOccupation FrmOccupation = new FormOccupation();
+            FrmOccupation.Show(this);
+        }
+
+        private void employeeDataToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //open employee menu
+            FrmEmployee FrmEmployee = new FrmEmployee();
+            FrmEmployee.Show(this);
+        }
+
+        private void promotionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //open repositon menu
+            FrmPromotion FrmPromotion = new FrmPromotion();
+            FrmPromotion.Show(this);
+        }
+
+=======
+>>>>>>> .r20
+        private void translocationToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            //open replacement menu
+            FrmReplacement FrmReplacement= new FrmReplacement();
+            FrmReplacement.Show(this);
+        }
+
     }
 }

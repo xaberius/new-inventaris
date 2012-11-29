@@ -64,7 +64,7 @@
             this.masterToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.insuranceToolStripMenuItem});
             this.masterToolStripMenuItem.Name = "masterToolStripMenuItem";
-            this.masterToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.masterToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.masterToolStripMenuItem.Text = "Master";
             // 
             // insuranceToolStripMenuItem
@@ -96,6 +96,55 @@
             this.typeInsuranceToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.typeInsuranceToolStripMenuItem.Text = "Type Insurance";
             // 
+<<<<<<< .mine
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem2.Text = "Branch Office";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+            // 
+            // employeeToolStripMenuItem
+            // 
+            this.employeeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.employeeDataToolStripMenuItem,
+            this.occupationToolStripMenuItem,
+            this.promotionToolStripMenuItem,
+            this.translocationToolStripMenuItem1});
+            this.employeeToolStripMenuItem.Name = "employeeToolStripMenuItem";
+            this.employeeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.employeeToolStripMenuItem.Text = "Employee";
+            // 
+            // employeeDataToolStripMenuItem
+            // 
+            this.employeeDataToolStripMenuItem.Name = "employeeDataToolStripMenuItem";
+            this.employeeDataToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.employeeDataToolStripMenuItem.Text = "Employee Data";
+            this.employeeDataToolStripMenuItem.Click += new System.EventHandler(this.employeeDataToolStripMenuItem_Click);
+            // 
+            // occupationToolStripMenuItem
+            // 
+            this.occupationToolStripMenuItem.Name = "occupationToolStripMenuItem";
+            this.occupationToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.occupationToolStripMenuItem.Text = "Occupation";
+            this.occupationToolStripMenuItem.Click += new System.EventHandler(this.occupationToolStripMenuItem_Click);
+            // 
+            // promotionToolStripMenuItem
+            // 
+            this.promotionToolStripMenuItem.Name = "promotionToolStripMenuItem";
+            this.promotionToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.promotionToolStripMenuItem.Text = "Reposition";
+            this.promotionToolStripMenuItem.Click += new System.EventHandler(this.promotionToolStripMenuItem_Click);
+            // 
+            // translocationToolStripMenuItem1
+            // 
+            this.translocationToolStripMenuItem1.Name = "translocationToolStripMenuItem1";
+            this.translocationToolStripMenuItem1.Size = new System.Drawing.Size(157, 22);
+            this.translocationToolStripMenuItem1.Text = "Translocation";
+            this.translocationToolStripMenuItem1.Click += new System.EventHandler(this.translocationToolStripMenuItem1_Click);
+            // 
+=======
+>>>>>>> .r20
             // StatusBarX
             // 
             this.StatusBarX.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -120,7 +169,7 @@
             // toolStripStatusLabel2
             // 
             this.toolStripStatusLabel2.AutoSize = false;
-            this.toolStripStatusLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripStatusLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
             this.toolStripStatusLabel2.Size = new System.Drawing.Size(187, 17);
             this.toolStripStatusLabel2.Text = "<== Xaberius Developer ==>";
@@ -135,7 +184,7 @@
             // toolStripStatusLabel3
             // 
             this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
-            this.toolStripStatusLabel3.Size = new System.Drawing.Size(61, 17);
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(55, 17);
             this.toolStripStatusLabel3.Text = "Date Time";
             this.toolStripStatusLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 

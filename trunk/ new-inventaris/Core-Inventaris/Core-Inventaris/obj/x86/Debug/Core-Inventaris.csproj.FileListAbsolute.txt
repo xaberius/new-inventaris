@@ -18,3 +18,13 @@ C:\Ayuk\Agus top design\new-inventaris\Core-Inventaris\Core-Inventaris\obj\x86\D
 C:\Ayuk\Agus top design\new-inventaris\Core-Inventaris\Core-Inventaris\obj\x86\Debug\Core_Inventaris.Properties.Resources.resources
 C:\Ayuk\Agus top design\new-inventaris\Core-Inventaris\Core-Inventaris\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Ayuk\Agus top design\new-inventaris\Core-Inventaris\Core-Inventaris\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\kerjaan\new-inventaris\Core-Inventaris\Core-Inventaris\bin\Debug\Core-Inventaris.exe
+D:\kerjaan\new-inventaris\Core-Inventaris\Core-Inventaris\bin\Debug\Core-Inventaris.pdb
+D:\kerjaan\new-inventaris\Core-Inventaris\Core-Inventaris\bin\Debug\MySql.Data.dll
+D:\kerjaan\new-inventaris\Core-Inventaris\Core-Inventaris\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\kerjaan\new-inventaris\Core-Inventaris\Core-Inventaris\obj\x86\Debug\Core_Inventaris.FrmLogin.resources
+D:\kerjaan\new-inventaris\Core-Inventaris\Core-Inventaris\obj\x86\Debug\Core_Inventaris.Properties.Resources.resources
+D:\kerjaan\new-inventaris\Core-Inventaris\Core-Inventaris\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\kerjaan\new-inventaris\Core-Inventaris\Core-Inventaris\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\kerjaan\new-inventaris\Core-Inventaris\Core-Inventaris\obj\x86\Debug\Core-Inventaris.exe
+D:\kerjaan\new-inventaris\Core-Inventaris\Core-Inventaris\obj\x86\Debug\Core-Inventaris.pdb
